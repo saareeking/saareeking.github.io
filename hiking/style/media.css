@@ -1,0 +1,142 @@
+@media (min-width: 500px) {
+	.container {
+		width: 470px;
+	}
+}
+
+@media (min-width: 600px) {
+	.container {
+		width: 570px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		width: 730px;
+	}
+}
+
+@media (min-width:991px) {
+	.container {
+		width: 950px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+
+
+
+
+/*****/
+
+
+@media (max-width: 1200px) {
+	.header-text h1 { font-size: 50px; }
+}
+
+@media (max-width: 991px) {
+	.header-text { width: 95%; }
+
+	.events-box { flex-direction: column; }
+
+	.event-items {
+		width: 100%;
+		margin-bottom: 25px;
+	}
+
+	.event-items:last-child { margin-bottom: 0; }
+
+	.our-tour-items { width: 33.33%; }
+}
+
+@media (max-width: 768px) {
+	.responsive-menu {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 15px 0;
+		transition: .3s all;
+	}
+
+	.responsive-menu-panel {
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+	.responsive-menu-panel.scroll {
+		box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+    	background: #f7f7f9;
+    	z-index: 9;
+	}
+
+	.main-header img { height: 95px; }
+	.nav-bar .logo { display: none; }
+
+	.menu-btn {
+		display: block;
+		width: 50px;
+		height: 50px;
+		background: #ccc;
+		border-radius: 125px;
+		position: relative;
+		cursor: pointer;
+	}
+
+	.menu-btn:before, .menu-btn:after { content: ''; transition: .4s all;}
+	.menu-btn:before { transform: translateY(-5px); }
+	.menu-btn:after { transform: translateY(5px); }
+	.menu-btn span, .menu-btn:before, .menu-btn:after {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 20px;
+		height: 1.5px;
+		margin-left: -9px;
+		background: #333;
+	}
+	.menu-btn_active span { transform: scaleX(0);}
+	.menu-btn_active:before { transform: rotate(45deg); }
+	.menu-btn_active:after { transform: rotate(-45deg); }
+
+	.nav-menu li {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 25px;
+	}
+
+	.nav-menu .logo-line { margin-bottom: 0; }
+
+	.header-text h1 { font-size: 40px; }
+	.header-text .header-link { padding: 15px; }
+
+	.our-tour-items { width: 50%; }
+	.nav-bar { display: none; }
+
+	.testimonial-author-item { width: 100%; }
+
+	.header-box { padding-top: 185px; }
+}
+
+@media (max-width: 600px) {
+	.form-box input { width: 100%; }
+	.header-text h1 { display: none; }
+}
+
+@media (max-width: 500px) {
+	.our-tour-items {
+		width: 100%;
+	}
+}
+
+
+@media (max-width: 500px) {
+	.footer-text { flex-direction: column; }
+	.footer-text p { margin-bottom: 10px; }
+	.footer-text p:last-child { margin-bottom: 0; }
+	.heading { font-size: 40px; }
+	.testimonial-author-item {	width: 100%;}
+}
